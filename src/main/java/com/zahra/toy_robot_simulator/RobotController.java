@@ -26,6 +26,12 @@ public class RobotController {
         robot.left();
     }
 
+    @Operation(summary = "right command")
+    @GetMapping(value = "/right")
+    public void right() {
+        robot.right();
+    }
+
     @Operation(summary = "move command")
     @GetMapping(value = "/move")
     public void move() {
