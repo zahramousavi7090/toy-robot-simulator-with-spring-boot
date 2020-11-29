@@ -20,4 +20,9 @@ public class RobotController {
         robot.place(place);
     }
 
+    @Operation(summary = "report command")
+    @GetMapping(value = "/report")
+    public Place report() {
+        return robot.report();
+    }
 }
