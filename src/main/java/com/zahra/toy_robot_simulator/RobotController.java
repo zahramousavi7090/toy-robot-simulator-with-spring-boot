@@ -20,6 +20,12 @@ public class RobotController {
         robot.place(place);
     }
 
+    @Operation(summary = "move command")
+    @GetMapping(value = "/move")
+    public void move() {
+        robot.move();
+    }
+
     @Operation(summary = "report command")
     @GetMapping(value = "/report")
     public Place report() {
